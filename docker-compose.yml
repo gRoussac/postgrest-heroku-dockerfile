@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postgrest-heroku:
+    container_name: postgrest-heroku
+    image: heroku-postgrest
+    ports:
+      - ${PORT}:3000
+    environment:
+      - PGRST_DB_SCHEMA=$PGRST_DB_SCHEMA
+      - PGRST_DB_ANON_ROLE=$PGRST_DB_ANON_ROLE
+      - PGRST_DB_URI=$PGRST_DB_URI
+      - PGRST_DB_POOL=$PGRST_DB_POOL
+    restart: always
