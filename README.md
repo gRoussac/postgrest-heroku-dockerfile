@@ -2,7 +2,7 @@
 
 Code is forked from https://github.com/PostgREST/postgrest-heroku
 
-Add a Dockerfile and a Docker compose file to use PostgREST on Heroku Docker builds directly (without buildpack thus)
+Adds a Dockerfile and a Docker compose file to use PostgREST on Heroku Docker builds directly (without buildpack thus)
 
 Config variables (on Heroku config vars or in your local environnement) should be prexifed by PGRST_DB_
 
